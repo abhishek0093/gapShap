@@ -1,5 +1,5 @@
 {
-  "name": "toko-toko",
+  "name": "gapshap-chatapp",
   "version": "1.0.0",
   "description": "A real Time chat application with rooms freature",
   "main": "server.js",
