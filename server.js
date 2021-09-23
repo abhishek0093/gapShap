@@ -14,7 +14,7 @@ const socketIO = require('socket.io');
 //creating the server using Express
 const server = http.createServer(app);
 var io = socketIO(server);
-const PORT = 3000 || process.env.PORT;
+const PORT = Process.env.PORT || 3000 ;
 
 //Join static public folder with the server
 const publicPath = path.join(__dirname, 'public');
