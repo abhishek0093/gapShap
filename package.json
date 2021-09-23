@@ -1,0 +1,20 @@
+{
+  "name": "toko-toko",
+  "version": "1.0.0",
+  "description": "A real Time chat application with rooms freature",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev" : "nodemon server"
+  },
+  "author": "Abhishek Mishra",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "socket.io": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.12"
+  }
+}

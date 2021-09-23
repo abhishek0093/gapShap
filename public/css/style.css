@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+/* for declaring global variables */
+:root {
+	--up-down-c: #2e2e33;
+	--sideBar-c: #75767c;
+	--btn-c: #050505;
+	--success-c: #5cb85c;
+	--error-c: #d9534f;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	color: whitesmoke;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background: var(--btn-c);
+	margin: 20px;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 5px 15px;
+	background: var(--btn-c);
+	color: white;
+	border: 0;
+	font-size: 17px;
+	margin-left: 8px;
+	border-radius: 10px;
+}
+
+/* Chat Page */
+
+.chatContainer {
+	background: #fff;
+	margin: 10px auto;
+	overflow: hidden;
+}
+.chatContainer span{
+	font-weight: bold;
+	font-size: larger;
+}
+
+.chatHeader {
+	background: var(--up-down-c);
+	color: #fff;
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	padding: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.chatBox {
+	height: 75vh;
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+}
+
+.infoBar {
+	background: var(--sideBar-c);
+	color: #fff;
+	padding: 20px 20px 60px;
+	overflow-y: scroll;
+}
+
+.infoBar h2 {
+	text-align: center;
+	font-size: 20px;
+	background: var(--up-down-c);
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.infoBar h3 {
+	margin-bottom: 15px;
+}
+
+.infoBar ul li {
+	padding: 10px 0;
+}
+
+.Msgs-wrapper {
+	padding: 30px;
+	/* max-height: 500px; */
+	overflow-y: scroll;
+	background-color: #dedede;
+}
+
+.Msgs-wrapper .textMsgs {
+	padding: 10px;
+	margin-bottom: 15px;
+	background-color: var(--btn-c);
+	border-radius: 5px;
+}
+
+.Msgs-wrapper .textMsgs .meta {
+	font-size: 15px;
+	font-weight: bold;
+	color: rgb(239 238 232);
+	opacity: 0.7;
+	margin-bottom: 7px;
+}
+
+.Msgs-wrapper .textMsgs .meta span {
+	color: rgb(239 238 232);
+}
+
+.typeboxContainer {
+	padding: 20px 30px;
+	background-color: var(--up-down-c);
+}
+
+.typeboxContainer form {
+	display: flex;
+}
+
+.typeboxContainer input[type='text'] {
+    font-size: 16px;
+    padding: 5px;
+    height: 40px;
+    flex: 1;
+    color: black;
+    background-color: whitesmoke;
+	border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+	.chatBox {
+		display: block;
+	}
+
+	.infoBar {
+		display: none;
+	}
+}
