@@ -43,11 +43,12 @@ If the server has some message for the client (sent by some other person, or ale
 Whenever the client types some message over the chatbox and clicks the 'send' button, we extract the typed message (using the id from index.html), emit the message to the server('text-message' event) and clears the textbox. 
 
 
-And our chatting goes on. Isn't that cool!!
+And our chatting goes on. Isn't that cool!! 
+
+DEMO LINK : [GapShap_Chatting](https://gapshap-chattingapp.herokuapp.com/index.html)
 
 # Future Improvements : 
 
 * Making the rooms more secure through a password mechanism. 
 * Storing and authenticating users so as to prevent spams. 
-
 
